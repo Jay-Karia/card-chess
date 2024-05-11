@@ -1,0 +1,4 @@
+.card-container {
+    @apply border-2 p-5 rounded-lg md:h-[400px] sm:h-[300px] h-[250px] border-black hover:bg-zinc-50;
+    aspect-ratio: 0.7;
+}

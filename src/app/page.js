@@ -15,6 +15,7 @@ export default function Home() {
     const handleRandom = () => {
         const newCard = getRandomCard()
         setCard(newCard)
+        // @ts-ignore
         setChessPiece(getChessPiece(newCard))
     }
 

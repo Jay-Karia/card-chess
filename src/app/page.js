@@ -1,20 +1,16 @@
 "use client"
 
-import {CardType} from "@/types/Card";
-import {ChessPieceType} from "@/types/ChessPeice";
+import { Button } from '@/components/ui/button'
+import Card from '@/components/card'
+import ChessPiece from '@/components/chess-piece'
 
-import {Button} from "@/components/ui/button"
-import Card from "@/components/card"
-import ChessPiece from "@/components/chess-piece"
-
-import {getRandomCard} from "@/lib/getRandomCard";
-import {getChessPiece} from "@/lib/getChessPiece";
-import {useState} from "react";
+import { getRandomCard } from '@/lib/getRandomCard'
+import { getChessPiece } from '@/lib/getChessPiece'
+import { useState } from 'react'
 
 export default function Home() {
-
-    const [card, setCard] = useState<CardType>({})
-    const [chessPiece, setChessPiece] = useState<ChessPieceType>({})
+    const [card, setCard] = useState({})
+    const [chessPiece, setChessPiece] = useState({})
 
     const handleRandom = () => {
         const newCard = getRandomCard()

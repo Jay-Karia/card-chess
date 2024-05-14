@@ -2,7 +2,7 @@
 ![image](public/demo.png)
 
 ⭐ Get random playing card <br>
-🎩 Generates it's equivalent chess piece <br>
+🎩 Generate it's equivalent chess piece <br>
 🔳 In a single click ❗<br>
 
 ### 📌 Chess Piece Conversion
@@ -11,8 +11,8 @@
 | King      | ♔            |
 | Queen     | ♕            |
 | Jack      | ♗            |
-| 10        | ♘            |
 | Ace       | ♖            |
+| 10        | ♘            |
 | 2-9       | ♙            |
 
 ### ❓ What about ♙

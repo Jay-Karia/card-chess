@@ -1,5 +1,5 @@
 # ♟ Welcome to Card Chess
-![image](public/demoImage.png)
+![image](public/demo.png)
 
 ⭐ Get random playing card <br>
 🎩 Generates it's equivalent chess piece <br>

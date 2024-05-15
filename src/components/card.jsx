@@ -20,9 +20,18 @@ export default function Card({ card }) {
   return (
     <div className={'card-container flex flex-col'}>
       {card.face ? (
-        <div className='h-full w-full'>
-          <Image src={card.image} alt="card image" width={150} height={100} className='h-full w-full'/>
+        <>
+        <div className={'p-2 w-max h-max absolute'}>
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            {card.face}
+          </h1>
         </div>
+        <div className={'p-10 w-full h-full flex justify-center'}>
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+            {suitMap[card.suit]}
+          </h1>
+        </div>
+      </>
       ) : (
         <div className="h-full w-full">
           <Image

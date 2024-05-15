@@ -10,12 +10,9 @@ export async function getRandomCard() {
     const face = faces[Math.trunc(Math.random() * faces.length)];
     const suit = suits[Math.trunc(Math.random() * suits.length)]
 
-    const image = `/cards/${face}${suit[0].toUpperCase()}.png`
-
     const card = {
         face,
         suit,
-        image
     }
 
     return card

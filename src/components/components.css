@@ -1,4 +1,8 @@
 .card-container {
-    @apply border-2 p-5 rounded-lg md:h-[400px] sm:h-[300px] h-[250px] border-black hover:bg-zinc-50;
+    @apply border-2 p-5 rounded-lg md:h-[400px] sm:h-[300px] h-[250px] border-black transition-all duration-300;
     aspect-ratio: 0.7;
+}
+
+.card-container:hover {
+    @apply bg-zinc-50 transition-all duration-300 transform -translate-x-2 -translate-y-2 border-b-8 border-r-8 rounded-2xl rounded-tl-md;
 }

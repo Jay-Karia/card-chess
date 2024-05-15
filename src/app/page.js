@@ -15,7 +15,6 @@ export default function Home() {
     const audioRef = useRef(null);
 
     const playAudio = () => {
-        // audio.play()
         audioRef.current.play()
     }
 

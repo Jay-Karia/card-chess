@@ -15,13 +15,12 @@ export default function Home() {
     const audioRef = useRef(null);
 
     const playAudio = () => {
-        // audio.play()
         audioRef.current.play()
     }
 
-    const handleRandom = () => {
+    const handleRandom = async () => {
         playAudio()
-        const newCard = getRandomCard()
+        const newCard = await getRandomCard()
         setCard(newCard)
         setChessPiece(getChessPiece(newCard))
     }
